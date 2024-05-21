@@ -17,17 +17,15 @@
     "@rspack/dev-server": "0.6.5"
   },
   "scripts": {
-    "start": "rspack serve",
-    "build": "rspack build",
-    "legacy:start": "webpack-cli serve",
-    "legacy:build": "webpack --mode production",
+    "start": "webpack-cli serve",
+    "build": "webpack --mode production",
     "serve": "serve dist -p 3001",
     "clean": "rm -rf dist"
   },
   "dependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.10.0",
     "lodash.merge": "^4.6.2"
   }
 }

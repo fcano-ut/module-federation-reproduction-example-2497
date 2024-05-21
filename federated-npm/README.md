@@ -5,6 +5,13 @@ This example demos a basic host application loading remote component.
 - `app1` is the host application.
 - `app2` standalone application which exposes `Button` component.
 
+
+Both applications share the lodash dependency.
+
+The idea is that it should be possible to pre-load all the remotes and get the remote to initialize with the higher version of lodash available in any remote.
+
+Right now this demo is not working due to this issue when calling `loadShare`: `TypeError: shareInfoRes.get is not a function`
+
 # Running Demo
 
 Run `pnpm run start`. This will build and serve both `app1` and `app2` on ports 3001 and 3002 respectively.
